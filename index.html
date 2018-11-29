@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">Travel Survey</h1>
+<p id="description">Tell us your thoughts on remote development!</p>
+
+<form id="survey-form" method="GET action=" #">
+
+    <fieldset>
+        <legend>Personal information:</legend>
+
+        <label id="name-label" for="name">* Name: </label>
+        <input type="text" name="name" id="name" placeholder=" Enter your name" required>
+
+        <label id="email-label" for="email">* Email: </label>
+        <input type="email" name="email" id="email" placeholder=" Enter your email" required>
+
+        <br>
+        <label id="number-label" for="age"> Age: </label>
+        <input type="number" name="age" id="number" min="1" max="115" placeholder="Age">
+        <br> <label>What's your gender?</label>
+        <input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+
+        <br>
+        <label>Are you US based?</label>
+        <input type="radio" name="US" value="yes" checked> Yes <input type="radio" name="US" value="no"> No <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Travel Habits</legend>
+
+        <label id="number-label" for="countryCount">How many countries besides your own have you been to? </label>
+        <input type="number" name="countryCount" min="0" max="200" placeholder="number">
+        <br>
+        <label>How often do you travel?</label> <select name="often" id="dropdown">
+            <option value="notOften">not often</option>
+            <option value="onceAYear">once a year</option>
+            <option value="SeveralTimes">several times a year</option>
+            <option value="often">all the time</option>
+        </select>
+
+        <br>
+        <label>Can you use more than one spoken language?</label>
+        <input type="radio" name="spoken language" value="yes" checked> Yes <input type="radio" name="spoken language"
+            value="no"> No <br>
+
+        <label>Are you interested in pursuing a remote career for travel purposes? </label><input type="radio" name="remote"
+            value="yes" checked> Yes <input type="radio" name="remote" value="no"> No <br>
+        <label>Do you have other related interests as well?</label>
+        <input type="checkbox" name="interests" value="social media"> social media
+        <input type="checkbox" name="interests" value="photography"> photography
+        <input type="checkbox" name="interests" value="blogging"> blogging
+
+        <br>
+        <label> Which social media do you use? </label>
+
+        <input type="checkbox" name="interests" value="social media"> Instagram
+        <input type="checkbox" name="interests" value="photography"> Twitter
+        <input type="checkbox" name="interests" value="blogging"> Facebook
+        <input type="checkbox" name="interests" value="blogging"> other
+
+    </fieldset>
+    <fieldset>
+        <legend>Developer Life</legend>
+        <label>What languages do you primarily use? checkbox</label>
+        <input type="checkbox" name="codeLanguage" value="JavaScript"> JavaScript
+        <input type="checkbox" name="interests" value="photography"> Ruby
+        <input type="checkbox" name="interests" value="blogging"> Swift
+        <input type="checkbox" name="interests" value="blogging"> other
+        <br>
+        <label>How long have you been coding? </label><select name="time">
+            <option value="6months"> 6 months or less</option>
+            <option value="onceAYear"> one year</option>
+            <option value="SeveralTimes"> more than one year</option>
+        </select>
+        <br>
+        <label>How have you been learning to code? </label><select name="Learning">
+            <option value="On own"> on my own</option>
+            <option value="onceAYear"> in a bootcamp </option>
+            <option value="SeveralTimes"> in school </option>
+            <option value="SeveralTimes"> other </option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Further Questions</legend>
+        <label>What would you like to know about becoming a remote developer?</label><textarea name="Would like to know about"
+            rows="4" cols="60">
+Tell us here.
+</textarea>
+        <br>
+        <button type="submit" id="submit" form="form1" value="Submit">Submit</button>
+
+    </fieldset>
+
+    </form>
+    </html>

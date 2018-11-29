@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    background: #52b788;
+    padding: 10px;
+    color: #592941;
+}
+
+fieldset {
+    padding: .5em;
+    margin: 1em;
+}
